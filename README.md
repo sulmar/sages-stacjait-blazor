@@ -16,19 +16,12 @@ Clone the Git Repository
 git clone https://github.com/sages-stacjait-blazor
 ```
 
-## Setup
-``` bash
-cd src
-dotnet run
-```
-
-
 ## Tutorial
 
 ``` bash
-dotnet new gitignore
-``` 
-
+mkdir src
+```
 
 1. Utwórz projekt **StacjaIT.BlazorApp** na podstawie szablonu **Blazor Web Assembly App Empty**
 2. Skopiuj pliki z folderu _Assets_ do folderu _wwwroot/images_
+
