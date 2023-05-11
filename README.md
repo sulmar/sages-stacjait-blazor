@@ -11,17 +11,19 @@ To take this website you'll need the following.
 
 ## Get started
 
-Clone the Git Repository
+1. Clone the Git Repository
 ``` bash
 git clone https://github.com/sages-stacjait-blazor
 ```
 
-## Tutorial
-
+2. Create folder _src_
 ``` bash
 mkdir src
 ```
 
-1. Utwórz projekt **StacjaIT.BlazorApp** na podstawie szablonu **Blazor Web Assembly App Empty**
-2. Skopiuj pliki z folderu _Assets_ do folderu _wwwroot/images_
+3. Create project **StacjaIT.BlazorApp** with using template **Blazor Web Assembly App Empty**
+
+4. Copy files from folder _Assets_ to folder _wwwroot/images_
+
+5. ...
 
