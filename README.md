@@ -27,3 +27,7 @@ mkdir src
 
 5. ...
 
+
+## Links
+- https://materializecss.com/
+- https://jsonplaceholder.typicode.com/
