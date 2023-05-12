@@ -5,33 +5,35 @@
 
 <div class="container">
 
-    <table class="striped">
+    @if (users is null)
+    {
+        <LoadingComponent />
+    }
+    else
+    {
+        <table class="striped">
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Item Name</th>
-                <th>Item Price</th>
+                <th>Username</th>
+                <th>Email</th>
             </tr>
         </thead>
 
+       
         <tbody>
-            <tr>
-                <td>Alvin</td>
-                <td>Eclair</td>
-                <td>$0.87</td>
-            </tr>
-            <tr>
-                <td>Alan</td>
-                <td>Jellybean</td>
-                <td>$3.76</td>
-            </tr>
-            <tr>
-                <td>Jonathan</td>
-                <td>Lollipop</td>
-                <td>$7.00</td>
-            </tr>
+
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.Name</td>
+                    <td>@user.UserName</td>
+                    <td>@user.Email</td>
+                </tr>
+            }
         </tbody>
     </table>
+    }
 
 </div>
 
