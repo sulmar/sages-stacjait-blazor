@@ -2,7 +2,8 @@
 
 ## Introduction
 
-Welcome! This is the sample website repository created in Blazor Web Assembly.
+Welcome! 
+Here is the repository with the **Blazor Web Assembly** application created during the **Stacja.IT** workshop by **Sages**.
 
 To take this website you'll need the following.
 
