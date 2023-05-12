@@ -60,5 +60,14 @@ mkdir src
 - Validation
 
 ### Future of Blazor
+- Build a .NET MAUI Blazor Hybric App
+https://learn.microsoft.com/en-us/aspnet/core/blazor/hybrid/tutorials/maui?view=aspnetcore-7.0&pivots=windows
+
+- Blazor Unified
+https://www.youtube.com/watch?v=48G_CEGXZZM
+
 - Generate Static generator with Blazor
 https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-components-outside-of-aspnetcore?view=aspnetcore-8.0
+
+- WebAssembly System Interface
+https://dev.to/azure/exploring-net-webassembly-with-wasi-and-wasmtime-41l5
