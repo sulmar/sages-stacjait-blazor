@@ -17,6 +17,7 @@
                 <th>Name</th>
                 <th>Username</th>
                 <th>Email</th>
+                <th></th>
             </tr>
         </thead>
 
@@ -29,6 +30,7 @@
                     <td>@user.Name</td>
                     <td>@user.UserName</td>
                     <td>@user.Email</td>
+                    <td><a href=@($"/users/{user.Id}/posts") class="waves-effect waves-light btn">Posts</a> </td>
                 </tr>
             }
         </tbody>

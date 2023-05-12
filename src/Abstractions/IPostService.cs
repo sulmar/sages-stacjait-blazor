@@ -3,7 +3,7 @@ using StacjaIT.BlazorApp.Models;
 
 namespace StacjaIT.BlazorApp.Abstractions;
 
-public interface IUserService
+public interface IPostService
 {
-    Task<List<User>> GetAllAsync();    
+    Task<List<Post>> GetByUser(int userId);
 }

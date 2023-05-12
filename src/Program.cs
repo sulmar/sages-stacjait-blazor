@@ -12,5 +12,6 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 
 // dotnet add package Microsoft.Extensions.Http
 builder.Services.AddHttpClient<IUserService, JsonPlaceHolderUserService>(sp => sp.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/"));
+builder.Services.AddHttpClient<IPostService, JsonPlaceHolderPostService>(sp => sp.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/"));
 
 await builder.Build().RunAsync();

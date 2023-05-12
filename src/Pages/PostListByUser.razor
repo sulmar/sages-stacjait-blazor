@@ -1,0 +1,34 @@
+﻿@page "/users/{userId:int}/posts"
+@inject IPostService Api
+
+<div class="container">
+
+    @if (posts is null)
+    {
+        <LoadingComponent />
+    }
+    else
+    {
+        @foreach (var post in posts)
+        {
+            <CardComponent Title="@post.Title" Body="@post.Body" />
+        }
+    }
+</div>
+
+
+@code {
+
+    [Parameter]
+    public int userId { get; set; }
+
+
+    private List<Post>? posts;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        posts = await Api.GetByUser(userId);
+    }
+
+
+}
