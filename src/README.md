@@ -11,4 +11,6 @@ dotnet run
 ~~~ 
 
 
-
+~~~ bash
+dotnet new globaljson --sdk-version 7.0.203
+~~~ 

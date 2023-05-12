@@ -1,9 +1,16 @@
 ﻿@page "/users"
-@using StacjaIT.BlazorApp.Abstractions;
-@using StacjaIT.BlazorApp.Models;
+@using StacjaIT.BlazorApp.Abstractions
+@using StacjaIT.BlazorApp.Models
 @inject IUserService Api
+@inject IJSRuntime JS
 
 <div class="container">
+
+
+    <a href="/users/add" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+
+    <a class="btn-floating btn-large waves-effect waves-light green" @onclick="Send"><i class="material-icons">send</i></a>
+
 
     @if (users is null)
     {
@@ -26,7 +33,7 @@
 
             @foreach (var user in users)
             {
-                <tr>
+                <tr @onclick="OnSelected">
                     <td>@user.Name</td>
                     <td>@user.UserName</td>
                     <td>@user.Email</td>
@@ -46,6 +53,19 @@
     protected override async Task OnInitializedAsync()
     {
         users = await Api.GetAllAsync();
+    }
+
+    private async Task Send()
+    {
+        Console.WriteLine("Send");
+
+        await JS.InvokeVoidAsync("M.toast", new { html = "Hello World!" });
+
+    }
+
+    private async Task OnSelected()
+    {
+        
     }
 
 }

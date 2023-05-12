@@ -1,0 +1,54 @@
+﻿@page "/users/add"
+@using Microsoft.AspNetCore.Components.Forms
+
+<div class="container">
+
+    <div class="row">
+        <EditForm Model="user" OnValidSubmit="Submit" class="col s12">
+
+            <DataAnnotationsValidator />
+
+            <ValidationSummary />
+
+            <div class="row">
+                <div class="input-field col s6">
+                    <InputText id="name" type="text" class="validate" @bind-Value="user.Name" />
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <InputText id="username" type="text" class="validate" @bind-Value="user.UserName" />
+                    <label for="username">Username</label>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="input-field col s12">
+                    <InputText id="password" type="password" class="validate" @bind-Value="user.Password" />
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <InputText id="email" type="email" class="validate" @bind-Value="user.Email" />
+                    <label for="email">Email</label>
+                </div>
+            </div>
+
+            <button class="btn waves-effect waves-light" type="submit" >
+                Submit                
+            </button>
+
+        </EditForm>
+    </div>
+
+</div>
+
+@code {
+    private User user = new User();
+
+    private async Task Submit()
+    {
+        
+    }
+
+}
