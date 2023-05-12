@@ -31,3 +31,33 @@ mkdir src
 ## Links
 - https://materializecss.com/
 - https://jsonplaceholder.typicode.com/
+
+
+## Agenda
+
+### Project Structure
+- index.html
+- App.razor
+- Router
+- DefaultLayout
+- _Imports.razor
+
+### Design Layout
+- LayoutComponentBase
+
+### Creating Components
+- @code
+- partial class
+
+### Get data
+- Dependency Injection
+- Register HTTPClient
+-
+### Submit form data
+- Form
+- Two-way binding
+- Validation
+
+### Future of Blazor
+- Generate Static generator with Blazor
+https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-components-outside-of-aspnetcore?view=aspnetcore-8.0
