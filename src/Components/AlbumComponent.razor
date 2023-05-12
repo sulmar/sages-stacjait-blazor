@@ -1,0 +1,16 @@
+﻿<li class="collection-item avatar">
+    <img src="images/yuna.jpg" alt="" class="circle">
+    <span class="title">@Album.Title</span>
+    <p>
+        First Line <br>
+        Second Line
+    </p>
+    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+</li>
+
+@code {
+
+    [Parameter, EditorRequired]
+    public Album Album { get; set; }
+
+}

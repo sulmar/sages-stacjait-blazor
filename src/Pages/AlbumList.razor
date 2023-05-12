@@ -1,0 +1,21 @@
+﻿@page "/albums"
+
+<div class="container">
+
+@if (albums is null)
+{
+    <LoadingComponent />
+}
+else
+{
+    <ul class="collection">
+
+        @foreach(var album in albums)
+        {
+            <AlbumComponent Album="@album" />        
+        }
+
+    </ul>    
+}
+
+</div>
